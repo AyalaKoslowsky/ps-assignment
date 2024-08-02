@@ -1,0 +1,17 @@
+img {
+    width: 140px;
+    height: 200px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s, box-shadow 0.3s;
+    border-radius: 10px;
+}
+
+img:hover {
+    transform: scale(1.1);
+    box-shadow: 0 8px 8px rgba(0, 0, 0, 0.2);
+}
+
+button {
+    background: none;
+    border: none;
+}
