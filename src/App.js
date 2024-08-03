@@ -26,9 +26,17 @@ function App() {
 
   return (
     <div className="App">
-      <MovieDetails movie={selectedMovie} favorites={favorites} />
-      <img src="./favorite.png" alt="Favorite" className="favorite-image"/>
-      <MovieList onMovieSelect={handleMovieSelect} />
+      <div className="content">
+        <img src="./favorite.png" alt="Favorite" className="favorite-image"/>
+        <MovieList onMovieSelect={handleMovieSelect} />
+      </div>
+      <div className="footer">
+        <MovieDetails
+          movie={selectedMovie}
+          favorites={favorites}
+          onFavoriteToggle={handleFavorite}
+        />
+      </div>
     </div>
   );
 }
