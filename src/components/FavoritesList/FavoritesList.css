@@ -1,7 +1,6 @@
-.movie-list {
+.favorites-list {
     display: flex;
     justify-content: center;
-    gap: 1px;
+    gap: 10px;
     flex-wrap: wrap;
-    margin: 5px;
   }

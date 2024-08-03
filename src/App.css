@@ -1,10 +1,15 @@
 .App {
   background-image: url("./background.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  /* background-color: rgba(11, 2, 44, 0.927); */
   text-align: center;
   padding: 10px;
+  color: antiquewhite;
 }
 
-.favorite-image {
+.home-image {
   width: 940px;
   height: auto;
   border-radius: 0px;

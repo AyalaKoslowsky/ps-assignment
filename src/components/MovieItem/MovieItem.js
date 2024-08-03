@@ -3,7 +3,6 @@ import './MovieItem.css';
 
 function MovieItem({ movie, onMovieSelect }) {
   const handleClick = () => {
-    console.log('Movie Clicked:', movie);
     onMovieSelect(movie);
   };
 

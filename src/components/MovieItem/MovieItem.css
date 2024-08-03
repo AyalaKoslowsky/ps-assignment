@@ -1,5 +1,5 @@
 .movie-image {
-    width: 140px;
+    width: 145px;
     height: 200px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     transition: transform 0.3s, box-shadow 0.3s;

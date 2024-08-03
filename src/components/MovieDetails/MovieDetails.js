@@ -1,5 +1,5 @@
 import React from 'react';
-// import './MovieDetails.css';
+import './MovieDetails.css';
 
 function MovieDetails({ movie, onFavoriteToggle, favorites }) {
   if (!movie) return null;

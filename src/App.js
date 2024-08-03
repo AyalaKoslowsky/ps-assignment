@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import MovieList from '@/components/MovieList/MovieList';
+import FavoritesList from '@/components/FavoritesList/FavoritesList';
 import MovieDetails from '@/components/MovieDetails/MovieDetails';
 import './App.css';
 
@@ -26,17 +27,19 @@ function App() {
 
   return (
     <div className="App">
-      <div className="content">
-        <img src="./favorite.png" alt="Favorite" className="favorite-image"/>
-        <MovieList onMovieSelect={handleMovieSelect} />
-      </div>
-      <div className="footer">
-        <MovieDetails
-          movie={selectedMovie}
-          favorites={favorites}
-          onFavoriteToggle={handleFavorite}
-        />
-      </div>
+      <img src="./home.png" alt="home" className="home-image"/>
+      <MovieList onMovieSelect={handleMovieSelect} />
+      <MovieDetails
+        movie={selectedMovie}
+        favorites={favorites}
+        onFavoriteToggle={handleFavorite}
+      />
+      <h2>Favorites</h2>
+      <FavoritesList 
+        favorites={favorites} 
+        onMovieSelect={handleMovieSelect} 
+        onFavoriteToggle={handleFavorite}
+      />
     </div>
   );
 }
